@@ -98,7 +98,7 @@ gulp.task('copy-to-dist', function () {
 );
 
 gulp.task('eslint', function() {
-    return gulp.src(['./dist/**/*.js'])
+    return gulp.src(['./src/**/*.js'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
